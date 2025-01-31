@@ -13,9 +13,9 @@ Project consists of a simple PowerShell commandlets to delete/create users and c
 
 <h2>Environments Used </h2>
 
-- <b>Windows 2019 serve</b> (22H2)
+- <b>Windows 2019 server</b> (22H2)
 
-<h2>Command scipt walk-through:</h2>
+<h2>Command script walk-through:</h2>
 
 <p align="center">
 Launch "Windows PowerShell" as Administrator 
@@ -54,21 +54,30 @@ Type Jon Doe in the search bar and click on "Find Now" and he should pop up:  <b
 <img src="https://i.imgur.com/fxHYMf7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+In the users and computers window, click on View on the top and select Advanced features(this will be useful later):  <br/>
+<img src="https://i.imgur.com/UXDe9gg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
- Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ Find Jon Doe again under Users and right click and select Properties:  <br/>
+<img src="https://i.imgur.com/ipqNoQS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Select Attribute Editor (Advanced Features enables the option to view this tab):  <br/>
+<img src="https://i.imgur.com/bz472Q6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Distinguished Name is used to move Jon Doe to the Desktop OU:  <br/>
+<img src="https://i.imgur.com/AkTZtcz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Go back to the Windows Powershell window and type in what in the picture. You can have the Attribute Editor window on the side to copy the Distinguished Name as well which goes after "-Identity":  <br/>
+<img src="https://i.imgur.com/E5cpb2w.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Go back to the Users and Computers window and you should see Jon Doe under Desktop:  <br/>
+<img src="https://i.imgur.com/GqL7PgH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+And Thats IT!!! (it but as IT as in info Tech)
 </p>
 
 <!--
