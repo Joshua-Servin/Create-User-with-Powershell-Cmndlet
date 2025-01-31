@@ -18,7 +18,7 @@ Project consists of a simple PowerShell commandlets to delete/create users and c
 <h2>Command script walk-through:</h2>
 
 <p align="center">
-Launch "Windows PowerShell" as Administrator 
+Launch "Windows PowerShell" as Administrator
  *Do not run Windows PowerShell ISE: <br/>
 <img src="https://i.imgur.com/JM4eoes.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
@@ -27,16 +27,24 @@ Type in the code thats in the picture and type in "Y". We are using "Jdoe" since
 <img src="https://i.imgur.com/jTFN0Ck.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Navigate to the Active Directory Users and Computers windows under tools on the top right Tab.: <br/>
+<br />
+<br />
+ Navigate to the Active Directory Users and Computers windows under tools on the top right Tab.: <br/>
 <img src="https://i.imgur.com/wxdUBdR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 <br />
 <br />
 Find "Desktop Support", Right click on properties, navigate to "Object" and Deselect "Protect object from accidental deletion" box. Apply. Right click on "Desktop Support" and delete it:  <br/>
 <img src="https://i.imgur.com/jmtyehK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+<br /> 
+<br />
 Go back to your PowerShell window and type in whats in the picture to create the OU again.:  <br/>
 <img src="https://i.imgur.com/7N2sXSQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+ <br />
 <br />
 <br />
 Type what is in the picture to create Jon Doe again:  <br/>
@@ -57,7 +65,7 @@ Type Jon Doe in the search bar and click on "Find Now" and he should pop up:  <b
 In the users and computers window, click on View on the top and select Advanced features(this will be useful later):  <br/>
 <img src="https://i.imgur.com/UXDe9gg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
- Find Jon Doe again under Users and right click and select Properties:  <br/>
+Find Jon Doe again under Users and right click and select Properties:  <br/>
 <img src="https://i.imgur.com/ipqNoQS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
